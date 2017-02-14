@@ -1,0 +1,60 @@
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("picture.jpg");
+    background-position: center;
+    background-color: black;
+
+    color: white;
+}
+
+body{
+    font-size: 6vw;    
+}
+
+.leftText{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0.6em;
+    margin-left: 1.1em;
+    display: block;
+}
+
+.love{
+    font-size: 0.8em;
+    color:indianred;
+}
+
+small{
+    font-size: 0.7em;
+}
+
+.heart{
+    color:indianred;
+    font-size: 1em;
+    text-align: right;
+
+    position: absolute;
+
+    font-weight: bold;
+
+    right: 1em;
+    bottom: 1em; 
+}
+
+.github{
+    color: darkgray;
+    font-size: 0.3em;
+    text-align: right;
+    position: absolute;
+    right: 0.3em;
+    bottom: 0.3em;
+}
+
+.since{
+    font-size: 0.7em;
+}
+
+.days{
+    font-size: 0.7em;
+}

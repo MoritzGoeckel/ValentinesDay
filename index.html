@@ -1,0 +1,42 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <span class="leftText">
+        Moritz<br />
+        <span class="love">loves</span><br />
+        Christine<br />
+        <span class="since">since</span><br />
+        <span id="time">XXX.xxxxx</span><br />
+        <span class="days">days</span>
+    </span>
+    
+    <!--<span class="heart"><3</span>-->
+    <a class="github" href="#">Fork on Github</a>
+
+    <script>
+    
+        function getLoveTime() {
+            //14. April 2016
+			var time = Date.now() - new Date(2016, 4 - 1, 14, 0, 0, 0, 0).getTime();
+			time = new Date(time);
+			return time / (1000*60*60*24);
+		}
+
+        function formatNumber(num, a){
+            num = num + "";
+            let before = num.split(".")[0];
+            let after = num.split(".")[1];
+            while(after.length < a)
+                after += "0";
+            return before + "<small>" + "." + after + "</small>";
+        }
+
+        setInterval(function(){
+            document.getElementById("time").innerHTML = formatNumber(Math.round(getLoveTime() * 100000) / 100000, 5);
+        }, 1000);
+
+    </script>
+
+</body>

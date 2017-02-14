@@ -59,3 +59,7 @@ small{
 .days{
     font-size: 0.7em;
 }
+
+.love, .since, .days{
+    letter-spacing: 0.1em;
+}
